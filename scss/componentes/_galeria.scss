@@ -1,0 +1,23 @@
+/*Diseño de la página de galeria*/
+.section-galeria-galeria{
+    img:not(.img-titulos){
+        border: 3px solid #000000;
+        @include borde-redondeado(40px);
+    }
+    .carousel{
+        @include tamaño(90%, auto);
+        max-width: 992px;
+        .carousel-caption{
+            background-color: #ffffff;
+            opacity: 0.8;   
+        }
+    }
+}
+.section-galeria-bartender{
+    .galeria-bartender{
+        max-width: 992px;
+        .galeria-iframe{
+            @include borde-redondeado(15px);    
+        }
+    }
+}  

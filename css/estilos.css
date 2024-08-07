@@ -1,0 +1,713 @@
+/*Aclaración: la resolución del dispositivo que utilizo es 1366x768 
+por si se quiere tener en cuenta al visualizar la página*/
+
+/*Diseño general para reset y otros predeterminados*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px
+      400px
+      1fr
+      auto;  
+    grid-template-areas:
+      "my-nav my-nav my-nav"
+      "my-header my-header my-header"
+      "my-main my-main my-main"
+      "my-footer my-footer my-footer"
+}
+nav{
+    grid-area: my-nav;
+}  
+header{
+    grid-area: my-header;
+}  
+main{
+    grid-area: my-main;
+} 
+footer{
+    grid-area: my-footer;
+}
+a:visited{
+    text-decoration: none;
+    color: #000000;
+}   
+.titulos-nosotros{
+    justify-content: center;
+    height: 70px;
+    gap: 20px;
+}
+.titulos-nosotros .h2-nosotros{
+    font-size: 3.5rem;
+    text-decoration: underline;
+    margin: 0px;
+}
+.h3-nosotros{
+    font-size: 2rem;
+    text-decoration: underline;
+}
+.img-titulos{
+    width: 50px;
+    height: 50px;
+}
+.cont-flex{
+    display: flex;
+    flex-flow: row wrap;
+}
+.flex-columna{
+    flex-flow: column wrap;
+}
+.background-blanco{
+    background-color: #fff;
+    color: #000;
+}
+.background-negro{
+    background-color: #000;
+    color: #fff;
+}
+.background-degrade-blanco{
+    background: linear-gradient(180deg, #000000 0%, #ffffff 50px);
+    color: #000;
+    padding: 70px 10px 10px 10px;
+}
+.background-degrade-negro{
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(0, 0, 0) 50px);
+    color: #fff;
+    padding: 70px 10px 10px 10px;
+}
+.ancho100{
+    width: 100%;
+}
+.justificado-centro{
+    justify-content: center;
+}
+.justificado-space-around{
+    justify-content: space-around;
+}
+.contenido-alineado-centro{
+    align-content: center;
+}
+.contenido-alineado-space-around{
+    align-content: space-around;
+}
+.items-alineado-space-around{
+    align-items: space-around;
+}
+.items-alineado-centro{
+    align-items: center;
+}
+.marginpadding0{
+    margin: 0px;
+    padding: 0px;
+}
+.borde-blanco{
+    border: 3px solid #ffffff;
+}
+.borde-negro{
+    border: 3px solid #000000;
+}
+.botones{
+    background-color: #343a40;
+    padding: 10px;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 2.5rem;
+    width: 100%;
+}
+.texto-centrado{
+    text-align: center;
+}
+/*Diseño del nav para todas las páginas*/
+.show{
+    background-color: #343a40;
+    justify-items: center;
+}
+.dropdown-menu {
+    background-color: #343a40;
+}
+.dropdown-menu a{
+    color: #fff;
+}
+.navbar-brand{
+    margin: 0px;
+}
+.nav-inicio{
+    position: fixed;
+    height: 80px;
+}
+.imagen-logo-nav{
+    height: 50px;
+    margin-bottom: 10px;
+}
+.navbar-texto{
+    font-size: 2em;
+}
+ul{
+    list-style-type: none;
+}
+.div-header{
+    background-color: #343a40;
+    background-image: url(../images/pattern-background.webp);
+    background-image: url(../images/backgroun-header2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    border-bottom: 3px solid black;
+}
+.img-header{
+    width: 300px;
+}
+h1{
+    font-size: 100px;
+}
+.gap20px{
+    gap: 20px;
+}
+/*Diseño Main o Index*/
+.section-nosotros-inicio{
+    padding: - 0px 10px 20px;
+}
+.cont-nosotros-inicio{
+    gap: 20px;
+    padding-bottom: 10px;
+}
+.div-cont-contacto-inicio{
+    width: 48%;
+    gap: 20px;
+    align-self: center;
+}
+.nosotros-inicio{
+    font-size: 3.5rem;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+.section-nosotros-inicio div p{
+    font-size: 1.5rem;
+    text-align: justify;
+    width: 70%;
+}
+.img-nosotros-inicio{
+    width: 100%;
+    border-radius: 10px;
+}
+.button-nosotros-inicio{
+    height: 4rem;
+    font-size: 1.75rem;
+}
+/*Section Menú Inicio*/
+.imagen-menu-inicio{
+    width: 30%;
+    border-radius: 20px;
+}
+/*Section Galeria Inicio*/
+.cont-galeria-inicio{
+    height: 90%;
+}
+.img-galeria-inicio{
+    width: 32%;
+    border-radius: 20px;
+}
+/*Section Presentacion Inicio*/
+.section-presentacion-inicio{
+    height: 70vh;
+}
+.video-presentacion-inicio{
+    width: 80vh;
+    height: 40vh;
+}
+/*Diseño del Index responsive*/
+@media (min-width: 370px) and (max-width: 991px){
+h1{
+    text-align:  center;
+}
+.section-nosotros-inicio{
+    padding: - 5px 5px 5px;
+}
+.section-nosotros-inicio div p{
+    width: 90%;
+}
+.section-menu-inicio{
+    align-items: center;
+}
+.cont-mobile-inicio{
+    gap: 20px;
+    align-items: center;
+}
+.cont-botonmenu-inicio{
+    width: 80%;
+}
+}
+@media (min-width: 370px) and (max-width: 767px){
+.img-header{
+    max-width: 50%;
+}
+h1{
+    font-size: 5rem;
+    text-align: center;
+}
+nav{
+    width: 100%;
+}
+.navbar-texto{
+    font-size: 2rem;
+}
+.button-menu-inicio{
+    font-size: 1.5rem;
+}
+.imagen-menu-inicio{
+    width: 70%;
+}
+.img-galeria-inicio{
+    width: 90%;
+}
+.section-presentacion-inicio .h2-nosotros{
+    font-size: 3rem;
+}
+.video-presentacion-inicio{
+    height: 40vh;
+    width: 40vh;
+}
+}
+@media (min-width: 768px) and (max-width: 991px){
+.button-menu-inicio{
+    font-size: 3rem;
+}
+.imagen-menu-inicio{
+    width: 50%;
+}
+.img-galeria-inicio{
+    width: 50%;
+}
+}
+/*Diseño de la página nosotros*/
+.divnosotros-nosotros{
+    width: 47%;
+}
+.img-nosotros-nosotros{
+    border-radius: 20px;
+}
+.divnosotros-nosotros p{
+    font-size: 2rem;
+    text-align: justify;
+    width: 90%;
+}
+.articulo-reseña{
+    width: 30%;
+    padding: 10px;
+    border-radius: 60px 0px 60px 0px;
+}
+.articulo-reseña h4{
+    font-size: 2rem;
+    border-radius: 40px;
+}
+.articulo-reseña p{
+    font-size: 1.2rem;
+}
+.img-nosotros-premios{
+    width: 20%;
+}
+.div-ubicacion{
+    width: 29%;
+}
+.section-nosotros-ubicacion .titulos-nosotros img{
+    height: 70px;
+}
+.div-ubicacion img{
+    width: 70px;
+    height: 70px;
+}
+.div-ubicacion p{
+    font-size: 2rem;
+}
+.div-iframe-ubicacion{
+    width: 68%;
+    padding: 15px;
+    height: 400px;
+    border-radius: 20px;
+}
+.div-tabla-horario{
+    width: 80%;
+    max-width: 768px;
+}
+table{
+    width: 80%;
+}
+thead{
+    background-color: #343A40;
+    color: #fff;
+}
+.div-1-section-patio{
+    width: 45%;
+    gap: 20px;
+}
+.div-1-section-patio p{
+    font-size: 2rem;
+    width: 80%;
+    text-align: justify;
+}
+.section-nosotros-patio img:not(.img-titulos){
+    width: 90%;
+    border-radius: 20px;
+}
+.div-2-section-patio{
+    width: 35%;
+}
+@media (min-width: 370px) and (max-width: 991px){
+.divnosotros-nosotros-texto{
+    order: 2;
+}
+.img-nosotros-premios{
+    width: 40%;
+}
+.divnosotros-nosotros img{
+    width: 80%;
+}
+.section-nosotros-patio{
+gap: 20px;
+}
+.div-1-section-patio{
+gap: 20px;
+}
+.div-1-section-patio p{
+font-size: 2rem;
+width: 90%;
+}
+}
+@media (min-width: 370px) and (max-width: 767px){
+.section-nosotros-patio .h2-nosotros{
+    font-size: 2.5rem;
+}
+.divnosotros-nosotros p{
+    font-size: 1.5rem;
+}
+.div-1-section-patio p{
+    font-size: 1.5rem;
+}
+}
+/*Diseño de la página de galeria*/
+.section-galeria-galeria{
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+}
+.img-galeria{
+    width: 30%;
+    border: 3px solid #000000;
+    border-radius: 20px;
+}
+.section-galeria-bartender{
+    height: 800px;
+    justify-content: center;
+    gap: 40px; 
+}
+.galeria-bartender{
+    width: 80%;
+    height: 80%;
+}
+.galeria-iframe{
+    border: 3px solid #ffffff;
+    border-radius: 15px;
+}
+.section-galeria-cafeteria{
+    height: 800px;
+    justify-content: center;
+    gap: 40px; 
+}
+/*Diseño de la página de Contacto*/
+.section-contacto-contacto{
+    justify-content: center;
+    gap: 40px; 
+}
+.div-contacto-img{
+    width: 30%;
+}
+.div-contacto-img img{
+    border: 4px solid #000000;
+    border-radius: 20px;
+}
+.formulario{
+    width: 59%;
+    font-size: 2rem;
+}
+.formulario label{
+    margin: 20px;
+}
+.formulario input{
+    height: 8%;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+::placeholder{
+    text-align: center;
+}
+.formulario select{
+    border: 2px solid #000000;
+}
+.section-contacto-comunicacion{
+    justify-content: center;
+    gap: 40px;
+}
+.article-contacto-comunicacion{
+    width: 39%;
+    background-color: #555555;
+    padding: 10px;
+    justify-content: space-between;
+    border: 3px solid #ffffff;
+    border-radius: 50px;
+    align-items: center;
+
+}
+.article-contacto-comunicacion p{
+    font-size: 1.5rem;
+    width: 80%;
+    text-align: justify;
+}
+.section-contacto-redes{
+    padding: 80px 20px 20px 20px;
+    justify-content: center;
+    gap: 20px;
+}
+.article-redes{
+    width: 22%;
+    background-color: #555555;
+    padding: 10px;
+    border: 3px solid #000000;
+    border-radius: 40px;
+    align-items: center;
+    font-size: 2rem;
+}
+.img-redes{
+    width: 50%;
+}
+.article-redes a{
+    text-align: center;
+}
+/*Diseño de la página de Menú*/
+.section-menu-menu{
+    padding: 40px;
+    gap: 40px;
+}
+.div1-section-menu-menu{
+    width: 48%;
+    gap: 20px;
+    align-content: center;
+}
+.img-menu-menu{
+    width: 90%;
+    border: 3px solid #000000;
+    border-radius: 90px 0px 0px 90px;
+}
+.cont-menu-aviso{
+    width: 70%;
+    height: 40%;
+    background-color: #555555;
+    border-radius: 40px;
+    border: 3px solid #000000;
+    align-content: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.cont-menu-aviso img{
+    width: 20%;
+}
+.cont-menu-aviso p{
+    font-size: 1rem;
+    width: 70%;
+    text-align: justify;
+}
+.section-menu-entradas{
+    height: 900px;
+    padding: 40px;
+    align-content: center;
+    gap: 20px;
+    justify-content: center;
+}
+.article-entradas{
+    width: 25%;
+    height: 45%;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.article-entradas img{
+    border-radius: 30px;
+    width: 60%;
+    border: 2px solid #000000;
+}
+.descripcion-platos{
+    font-size: 1rem;
+    text-align: center;
+}
+.precio-platos{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+.section-menu-principal{
+    padding: 40px;
+    gap: 40px;
+    justify-content: center;
+}
+.article-principal{
+    width: 25%;
+    height: 25%;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.article-principal img{
+    border-radius: 30px;
+    width: 60%;
+    border: 2px solid #ffffff;
+}
+.article-principal .descripcion-platos{
+    font-size: 1rem;
+    text-align: center;
+}
+.article-principal .precio-platos{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+.article-principal-salsas{
+    width: 80%;
+    height: 8%;
+    border-radius: 40px;
+    text-align: center;
+}
+.section-menu-bebidas{
+    padding-top: 10px;
+    height: 1700px;
+    justify-content: center;
+    overflow: hidden;
+}
+.cont-titulo-bebidas{
+    height: 5%;
+}
+.cont-bebidas{
+    width: 33%;
+    flex-wrap: nowrap;
+}
+.titulos-bebidas{
+    font-size: 3rem;
+    text-decoration: underline;
+    text-align: center;
+}
+.titulos-bebidas-secundarios{
+    font-size: 2rem;
+    text-align: center;
+}
+.article-bebidas{
+    margin: 4px;
+}
+.bebidas-nombre{
+    width: 70%;
+    text-align: center;
+}
+.precio-bebidas{
+    width: 25%;
+    text-align: end;
+}
+.section-menu-cafeteria-titulo{
+    border-top: 2px solid #000000;
+    padding: 20px;
+}
+.cont-cafeteria-inicio{
+    padding: 40px;
+    justify-content: space-between;
+}
+.cont-cafeteria-inicio p{
+    width: 39%;
+    font-size: 2rem;
+    text-align: justify;
+}
+.cont-cafeteria-inicio img{
+    width: 50%;
+    border: 3px solid #000000;
+    border-radius: 20px;
+}
+.section-menu-cafeteria{
+    border-top: 2px solid #000000;
+    justify-content: center;
+}
+.cont-cafeteria{
+    width: 50%;
+    flex-wrap: nowrap;
+}
+/*Diseño Footer para todas las páginas*/
+footer{
+    padding: 40px 0px 10px 10px;
+    font-size: 1.75rem;
+}
+.cont-copyright-footer{
+    width: 30%;
+}
+.cont-copyright-footer img{
+    width: 70%;
+}
+.cont-ubicacion-footer{
+    width: 35%;
+}
+.cont-redes-footer{
+    width: 20%;
+    gap: 20px;
+}
+.img-redes-footer{
+    width: 30%;
+}
+.copyright-footer {
+	font-style: italic;
+	line-height: 1.5;
+}
+/*Diseño Footer Responsive */
+@media (min-width: 370px) and (max-width: 991px){
+.mobile-columna{
+    flex-direction: column;
+}
+.titulos-nosotros .h2-nosotros{
+    font-size: 2.2rem;
+}
+.mobile-columna-reverse{
+    flex-direction: column-reverse;
+}
+.mobile-ancho100{
+    width: 100%;   
+}
+.mobile-padding100px{
+    padding-top: 100px;
+}
+footer{
+    font-size: 1rem;
+    gap: 20px;
+}
+.cont-redes-footer{
+    flex-flow: row;
+}
+.img-redes-footer{
+    width: 60%;
+}
+}
+@media (min-width: 768px) and (max-width: 991px){
+.img-redes-footer{
+    width: 30%;
+}
+footer{
+    font-size: 1.5rem;
+}
+.articulo-reseña{
+    width: 70%;
+}
+.reseñas-nosotros{
+    align-items: center;
+}
+}

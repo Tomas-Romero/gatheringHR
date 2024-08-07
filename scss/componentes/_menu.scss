@@ -1,0 +1,157 @@
+/*Diseño de la página de Menú*/
+.section-menu-menu{
+    gap: 40px;
+    .div1-section-menu-menu{
+        @include tamaño(47%, auto);
+        align-self: center;
+    }
+    .img-menu-menu{
+        @include tamaño(100%, auto);
+        @include borde-redondeado(90px 0px 0px 90px);
+    }
+    .cont-menu-aviso{
+        @include tamaño(100%, auto);
+        background-color: $gris-principal;
+        @include borde-redondeado(40px);
+        padding: 20px;
+        img{
+            @include tamaño(20%, auto);
+        }
+        p{
+            @include fuente(1.3rem);
+            @include tamaño(70%, auto);
+            text-align: justify;
+        }
+    }
+}
+/*Seccion de las entradas del menu*/
+.section-menu-entradas{
+    .cont-articulo-entrada{
+        .article-entrada{
+            background-color: #fff;
+            color: #000;
+        }
+    }
+}
+.section-menu-principal{
+    .cont-articulo-entrada{
+        .article-entrada{
+            background-color: #000;
+            color: #fff;
+        }
+        .article-principal-salsas{
+            @include tamaño(80%, auto);
+            background-color: #000;
+            padding: 10px;
+            color: #fff;
+            @include borde-redondeado(40px);
+        }
+    }
+}
+.cont-articulo-entrada{
+    .article-entrada{
+        background-color: #000;
+        color: #fff;
+        @include tamaño(25%, 40%);
+        @include borde-redondeado(20px);
+        img{
+            @include borde-redondeado(20px);
+            height: 55%;
+            object-fit: cover;
+        }
+    }
+}
+@media (min-width: 370px) and (max-width: 991px){
+    .cont-articulo-entrada .article-entrada{
+        justify-content: center;
+        @include tamaño(90%, auto);
+        img{
+            max-width: 500px;
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .cont-articulo-entrada .article-entrada{
+        @include tamaño(40%, auto);
+    }
+
+}
+.section-menu-bebidas{
+    border-top: 3px solid white;
+    .cont-bebidas{
+        @include tamaño(calc(100%/3), auto);
+        padding: 10px;
+        text-align: center;
+        h3{
+            text-decoration: underline;
+            @include fuente(2rem)
+        }
+        .article-bebidas{
+            @include tamaño(100%, auto);
+        }
+        .bebidas-nombre{
+            @include tamaño(70%, auto);
+            text-align: start;
+        }
+        .precio-bebidas{
+            @include tamaño(25%, auto);
+            text-align: end;
+        }
+    }
+    .cont-bebidas-negro{
+        background-color: #000;
+        color: #fff;
+    }
+}
+.section-menu-cafeteria-titulo{
+    border-top: 3px solid white;
+    p{
+        @include tamaño(39%,auto);
+        text-align: justify;
+        @include fuente(2rem);
+    }
+    img{
+        @include tamaño(49%, auto);   
+        @include borde-redondeado(20px);
+    }
+}
+.section-menu-cafeteria{
+    .cont-bebidas{
+        @include tamaño(calc(100%/2), auto);
+    }
+}
+@media (min-width: 370px) and (max-width: 991px){
+.section-menu-menu{
+    .div1-section-menu-menu{
+        @include tamaño(80%, auto);
+        img{
+            @include tamaño(30%, auto);
+        }
+        .img-menu-menu{
+            @include borde-redondeado(15px);            
+        }
+    }
+}
+.section-menu-cafeteria-titulo{
+    .cont-cafeteria-inicio{
+        *{
+            @include tamaño(90%, auto)
+        }
+    }
+}
+.section-menu-bebidas{
+    .cont-bebidas{
+        .titulos-bebidas{
+            @include fuente(2.8rem);
+        }
+        h4{
+            @include fuente(2rem); 
+        }
+        .article-bebidas{
+            p{
+                @include fuente(1.2rem);
+            }
+        }
+    }
+}
+}

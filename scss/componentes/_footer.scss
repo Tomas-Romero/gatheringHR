@@ -1,0 +1,59 @@
+footer{
+    grid-area: my-footer;
+    padding: 40px 0px 10px 10px;
+    @include fuente(1.75rem);
+    .cont-copyright-footer{
+        @include tamaño(30%, auto);
+    }
+    .cont-copyright-footer img{
+        @include tamaño(70%, auto);
+    }
+    .cont-ubicacion-footer{
+        @include tamaño(35%, auto);
+    }
+    .cont-redes-footer{
+        @include tamaño(20%, auto);
+    }
+    .img-redes-footer{
+        @include tamaño(30%, auto);
+    }
+    .copyright-footer {
+        font-style: italic;
+        line-height: 1.5;
+    }
+}
+@media (min-width: 370px) and (max-width: 991px){
+.mobile-columna{
+    flex-direction: column;
+}
+section .titulos-nosotros .h2-largos{
+    @include fuente(2.2rem);
+}
+.mobile-columna-reverse{
+    flex-direction: column-reverse;
+}
+.mobile-ancho100{
+    width: 100% !important;   
+}
+.mobile-padding100px{
+    padding-top: 100px;
+}
+footer{
+    @include fuente(1rem);
+    gap: 20px;
+}
+.cont-redes-footer{
+    flex-flow: row;
+}
+.img-redes-footer{
+    @include tamaño(60%, auto);
+}
+}
+@media (min-width: 768px) and (max-width: 991px){
+.img-redes-footer{
+    @include tamaño(30%, auto);
+}
+footer{
+    @include fuente(1.5rem);
+}
+}
