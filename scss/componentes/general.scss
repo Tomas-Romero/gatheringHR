@@ -1,0 +1,29 @@
+/*Parsear los estilos en general*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+// Definir variables para la fuente
+$font-family-base: 'Montserrat', sans-serif;
+$font-weight-medium: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+/*Definicion de variables y mixins*/
+$azul-principal: #282D46;
+$negro: #333333;
+$blanco: #F0F0F0;
+$amarillo-secundario: #F2B728;
+
+body {
+    font-family: $font-family-base;
+    font-weight: $font-weight-medium;
+}
+
+.background-azul{
+    background-color: $azul-principal;
+}
+.texto-blanco-propio{
+    color: $blanco
+}

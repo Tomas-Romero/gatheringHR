@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply font-montserrat;
+    font-weight: 400; /* Establecer como Medium por defecto */
+}

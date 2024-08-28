@@ -1,0 +1,35 @@
+/*Parsear los estilos en general*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/*Definicion de variables y mixins*/
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+strong {
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+
+.background-azul {
+  background-color: #282D46;
+}
+
+.texto-blanco-propio {
+  color: #F0F0F0;
+}
+
+/*# sourceMappingURL=general.css.map */

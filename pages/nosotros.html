@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <link rel="shortcut icon" href="../images/gathering-logo-blanco.png" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/styles.min.css">
+        <script src="https://unpkg.com/feather-icons"></script>
+        <title>Gathering HR | Nosotros</title>
+    </head>
+    <body class="antialiased">
+    <!--Seccion del nav y header-->
+    <nav class="bg-blue-800 fixed w-full background-azul z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo y Nombre de la Marca -->
+                <a href="nosotros.html" class="flex items-center">
+                    <img src="../images/gathering-logo-blanco.png" alt="Logo de Gathering HR" class="h-12">
+                    <span class="text-white text-2xl font-bold ml-3">GATHERING HR</span>
+                </a>
+                <!-- Botón de Menú para Móviles -->
+                <div class="flex md:hidden">
+                    <button id="nav-toggle" class="text-white focus:outline-none">
+                        <i data-feather="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+                <!-- Menú de Navegación -->
+                <div id="nav-menu" class="hidden md:flex md:items-center md:space-x-6">
+                    <a href="../index.html" class="text-white visited:text-white hover:text-gray-500 transition-colors">Inicio</a>
+                    <span class="hidden md:block h-6 border-l-2 border-gray-300"></span>
+                    <a href="nosotros.html" class="text-white visited:text-white hover:text-gray-500 transition-colors font-bold">Nosotros</a>
+                    <span class="hidden md:block h-6 border-l-2 border-gray-300"></span>
+                    <a href="vacantes.html" class="text-white visited:text-white hover:text-gray-500 transition-colors">Vacantes</a>
+                    <span class="hidden md:block h-6 border-l-2 border-gray-300"></span>
+                    <a href="contacto.html" class="text-white visited:text-white hover:text-gray-500 transition-colors">Contacto</a>
+                </div>
+            </div>
+            <!-- Menú Colapsado para Móviles -->
+            <div id="nav-menu-mobile" class="md:hidden hidden flex-col space-y-2 mt-2 pb-4">
+                <a href="../index.html" class="text-white visited:text-white hover:text-gray-500 transition-colors block">Inicio</a>
+                <a href="nosotros.html" class="text-white visited:text-white hover:text-gray-500 transition-colors block font-bold">Nosotros</a>
+                <a href="vacantes.html" class="text-white visited:text-white hover:text-gray-500 transition-colors block">Vacantes</a>
+                <a href="contacto.html" class="text-white visited:text-white hover:text-gray-500 transition-colors block">Contacto</a>
+            </div>
+        </div>
+    </nav>
+    <header class="py-16 text-white">
+        <div>
+            <img class="w-full object-cover max-h-72" src="../images/portada-gathering 3.svg" alt="Portada de inicio para Gathering HR">
+        </div>
+        <div class="background-azul h-60 content-center text-center">
+            <img class="h-16 sm:h-16 lg:h-28 mx-auto" src="../images/gathering-logo-blanco.png" alt="Logo de Gathering HR">
+            <h1 class="font-bold text-3xl lg:text-5xl sm:text-3xl">GATHERING HR</h1>
+            <h2 class="lg:text-3xl text-xl sm:text-xl mt-2">Uniendo el Talento y las Empresas</h2>
+        </div>
+    </header>
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <!--Link a js-->
+    <script>
+        // Inicializar Feather Icons
+        feather.replace();
+
+        // Funcionalidad del menú hamburguesa
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenuMobile = document.getElementById('nav-menu-mobile');
+
+        navToggle.addEventListener('click', () => {
+            navMenuMobile.classList.toggle('hidden');
+        });
+    </script>
+</body>
+    
+</body>
+</html>
