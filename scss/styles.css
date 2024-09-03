@@ -1,3 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  @apply font-montserrat;
+  font-weight: 400; /* Establecer como Medium por defecto */
+}
+
 /*Parsear los estilos en general*/
 * {
   margin: 0px;
@@ -22,6 +30,7 @@ body {
 .contenedor-nosotros-3 {
   background-image: url(../../images/mexico-mapa.webp);
   background-color: #282D46;
-}
-
-/*# sourceMappingURL=general.css.map */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}/*# sourceMappingURL=styles.css.map */

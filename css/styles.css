@@ -19,25 +19,17 @@ body {
   font-weight: 400;
 }
 
-strong {
-  font-weight: 600;
-}
-
-a {
-  text-decoration: none;
-  color: #000000;
-}
-a:visited {
-  text-decoration: none;
-  color: #000000;
-}
-
 .background-azul {
   background-color: #282D46;
 }
 
 .texto-blanco-propio {
   color: #F0F0F0;
+}
+
+.contenedor-nosotros-3 {
+  background-image: url(../../images/mexico-mapa.webp);
+  background-color: #282D46;
 }
 
 /*# sourceMappingURL=styles.css.map */
