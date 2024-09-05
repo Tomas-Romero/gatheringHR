@@ -19,8 +19,8 @@
                 <div class="flex items-center justify-between h-16">
                     <!-- Logo y Nombre de la Marca -->
                     <a href="contacto.html" class="flex items-center">
-                        <img src="../images/gathering-logo-blanco.png" alt="Imagen de la oficina Gathering HR" class="h-9">
-                        <span class="text-white text-2xl font-bold ml-3">GATHERING HR</span>
+                        <img src="../images/gathering-logo-blanco.png" alt="Imagen de la oficina Gathering HR" class="h-9 transition-transform duration-300 transform hover:scale-110">
+                        <span class="text-white text-2xl font-bold ml-3 hover:scale-105 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-white hover:to-gray-300 transition-all duration-300 ease-in-out">GATHERING HR</span>
                     </a>
                     <!-- Botón de Menú para Móviles -->
                     <div class="flex md:hidden">
@@ -30,13 +30,13 @@
                     </div>
                     <!-- Menú de Navegación -->
                     <div id="nav-menu" class="hidden md:flex md:items-center md:space-x-6">
-                        <a href="../index.html" class="text-white visited:text-white hover:text-gray-500 transition-colors">Inicio</a>
+                        <a href="../index.html" class="nav-link text-white visited:text-white hover:text-gray-500 hover:underline hover:scale-125 transition-all duration-300 ease-in-out">Inicio</a>
                         <span class="hidden md:block h-6 border-l-2 border-gray-300"></span>
-                        <a href="nosotros.html" class="text-white visited:text-white hover:text-gray-500 transition-colors">Nosotros</a>
+                        <a href="nosotros.html" class="nav-link text-white visited:text-white hover:text-gray-500 hover:underline hover:scale-125 transition-all duration-300 ease-in-out">Nosotros</a>
                         <span class="hidden md:block h-6 border-l-2 border-gray-300"></span>
-                        <a href="vacantes.html" class="text-white visited:text-white hover:text-gray-500 transition-colors">Vacantes</a>
+                        <a href="vacantes.html" class="nav-link text-white visited:text-white hover:text-gray-500 hover:underline hover:scale-125 transition-all duration-300 ease-in-out">Vacantes</a>
                         <span class="hidden md:block h-6 border-l-2 border-gray-300"></span>
-                        <a href="contacto.html" class="text-white visited:text-white hover:text-gray-500 transition-colors font-bold">Contacto</a>
+                        <a href="contacto.html" class="nav-link text-white visited:text-white hover:text-gray-500 hover:underline hover:scale-125 transition-all duration-300 ease-in-out font-bold">Contacto</a>
                     </div>
                 </div>
                 <!-- Menú Colapsado para Móviles -->
@@ -58,6 +58,15 @@
                 <h2 class="lg:text-3xl text-xl sm:text-xl mt-2">Uniendo el Talento y las Empresas</h2>
             </div>
         </header>
+    <!--Main de la pagina-->
+    <main>
+        <!-- Botón flotante de WhatsApp -->
+        <a href="https://wa.me/1234567890" 
+        class="fixed bottom-4 right-4 bg-green-500 p-2 rounded-full shadow-lg hover:bg-green-600 transition transform hover:scale-105 z-50"
+        target="_blank">
+            <img src="../images/whatsapp.png" alt="Logo de WhatsApp" class="h-16 w-16">
+        </a>
+    </main>
     <!-- Footer -->
     <footer class="background-azul text-white py-4">
         <h2 class=" text-center font-bold text-3xl md:text-5xl">Uniendo el Talento y las Empresas</h2>
@@ -65,9 +74,9 @@
             <div class="flex flex-col items-center justify-center w-fit py-2 px-10">
                 <h3 class="lg:text-2xl text-xl">Contacto</h3>
                 <img class="size-24" src="../images/gmail.png" alt="Imagen de logo de mail">
-                <a href="contacto.html" class="w-fit text-black bg-[#F2B728] text-sm sm:text-xl content-center font-semibold border-solid border-2 border-white py-3 px-8 rounded-lg">Contacto</a>    
+                <a href="contacto.html" class="w-fit bg-[#F2B728] text-[#282D46] text-sm sm:text-xl content-center font-semibold border-solid border-2 border-white py-3 px-8 rounded-lg transition-all duration-500 ease-in-out transform hover:scale-110 hover:bg-[#ffcc00] hover:text-white hover:shadow-2xl hover:border-[#1c2033]">Contacto</a>    
             </div>
-            <img class="size-24" src="../images/linkedin (2).png" alt="Imagen del logo de Linkedin">
+            <img class="size-24 transition-all duration-500 ease-in-out transform hover:scale-105 hover:shadow-lg hover:bg-[#282D46] hover:border-4 hover:border-[#F2B728] hover:p-2 rounded-lg" src="../images/linkedin (2).png" alt="Imagen del logo de Linkedin">        
         </div>
         <div class="background-azul content-center text-center pt-8 md:pt-0 ">
             <img class="h-16 lg:h-28 mx-auto" src="../images/gathering-logo-blanco.png" alt="Logo de Gathering HR">

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Parsear los estilos en general*/
 * {
   margin: 0px;
@@ -19,7 +20,32 @@ body {
   color: #F0F0F0;
 }
 
-.contenedor-nosotros-3 {
-  background-image: url(../../images/mexico-mapa.webp);
-  background-color: #282D46;
+/* Añadir al archivo CSS */
+.group {
+  border: 2px solid black;
+}
+
+.group:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  border: 5px solid yellow;
+  box-sizing: border-box;
+  /* Añadir al archivo CSS */
+}
+.group:hover::before .borde-interior {
+  position: relative;
+  padding: 5px; /* Ajusta el padding para que el borde interior se vea bien */
+}
+.group:hover::before .borde-interior::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 5px solid #F2B728; /* Grosor y color del borde interior */
+  box-sizing: border-box;
+  pointer-events: none; /* Asegura que el borde interior no interfiera con la interacción */
 }/*# sourceMappingURL=general.css.map */

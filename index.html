@@ -19,8 +19,8 @@
             <div class="flex items-center justify-between h-16">
                 <!-- Logo y Nombre de la Marca -->
                 <a href="index.html" class="flex items-center">
-                    <img src="images/gathering-logo-blanco.png" alt="Imagen de la oficina Gathering HR" class="h-9">
-                    <span class="text-white text-2xl font-bold ml-3">GATHERING HR</span>
+                    <img src="images/gathering-logo-blanco.png" alt="Imagen de la oficina Gathering HR" class="h-9 transition-transform duration-300 transform hover:scale-110">
+                    <span class="text-white text-2xl font-bold ml-3 hover:scale-105 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-white hover:to-gray-300 transition-all duration-300 ease-in-out">GATHERING HR</span>
                 </a>
                 <!-- Botón de Menú para Móviles -->
                 <div class="flex md:hidden">
@@ -30,13 +30,13 @@
                 </div>
                 <!-- Menú de Navegación -->
                 <div id="nav-menu" class="hidden md:flex md:items-center md:space-x-6">
-                    <a href="index.html" class="text-white visited:text-white hover:text-gray-500 transition-colors font-bold">Inicio</a>
+                    <a href="index.html" class="nav-link text-white visited:text-white hover:text-gray-500 hover:underline hover:scale-125 transition-all duration-300 ease-in-out font-bold">Inicio</a>
                     <span class="hidden md:block h-6 border-l-2 border-gray-300"></span>
-                    <a href="pages/nosotros.html" class="text-white visited:text-white hover:text-gray-500 transition-colors">Nosotros</a>
+                    <a href="pages/nosotros.html" class="nav-link text-white visited:text-white hover:text-gray-500 hover:underline hover:scale-125 transition-all duration-300 ease-in-out">Nosotros</a>
                     <span class="hidden md:block h-6 border-l-2 border-gray-300"></span>
-                    <a href="pages/vacantes.html" class="text-white visited:text-white hover:text-gray-500 transition-colors">Vacantes</a>
+                    <a href="pages/vacantes.html" class="nav-link text-white visited:text-white hover:text-gray-500 hover:underline hover:scale-125 transition-all duration-300 ease-in-out">Vacantes</a>
                     <span class="hidden md:block h-6 border-l-2 border-gray-300"></span>
-                    <a href="pages/contacto.html" class="text-white visited:text-white hover:text-gray-500 transition-colors">Contacto</a>
+                    <a href="pages/contacto.html" class="nav-link text-white visited:text-white hover:text-gray-500 hover:underline hover:scale-125 transition-all duration-300 ease-in-out">Contacto</a>
                 </div>
             </div>
             <!-- Menú Colapsado para Móviles -->
@@ -59,37 +59,100 @@
         </div>
     </header>
 <main>
+    <!-- Botón flotante de WhatsApp -->
+        <a href="https://wa.me/1234567890" 
+        class="fixed bottom-4 right-4 bg-green-500 p-2 rounded-full shadow-lg hover:bg-green-600 transition transform hover:scale-105 z-50"
+        target="_blank">
+            <img src="images/whatsapp.png" alt="Logo de WhatsApp" class="h-16 w-16">
+        </a>
     <!-- Sección 1 -->
-    <section id="seccion1" class="py-12 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-4">Sección 1</h2>
-            <p class="text-gray-700">Contenido de la sección 1. Aquí puedes poner cualquier cosa que quieras mostrar en esta sección.</p>
+    <div class="flex flex-col justify-center my-4 w-full">
+        <h2 class="lg:text-3xl text-xl font-bold mb-4 text-center">Nuestros Servicios</h2>
+        <div class="flex flex-wrap md:flex-row flex-col justify-evenly content-center gap-4 p-4">
+        <!-- Primer Contenedor -->
+            <div class="borde-interior relative group md:w-1/4 w-2/3 p-4 border-2 border-black bg-white overflow-hidden">
+                <!-- Contenedor que aparece al hacer hover -->
+                <div class="absolute inset-0 flex items-center justify-center bg-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <p class="text-center transition-opacity duration-500">Texto más largo que reemplaza al título y la imagen</p>
+                </div>
+              <!-- Contenedor que se oculta al hacer hover -->
+                <div class="p-4 font-semibold h-full justify-between relative z-10 flex flex-col items-center duration-500 group-hover:opacity-0">
+                    <h3 class="text-center md:text-2xl text:xl text-black mb-2 transition-opacity duration-500">Reclutamiento y Selección</h3>
+                    <img src="images/reclutamiento.png" alt="Descripción de la imagen" class="w-32 h-32 transition-opacity duration-500">
+                </div>
+            </div>
+        <!-- Segundo Contenedor -->
+            <div class="borde-interior group md:w-1/4 w-2/3 p-4 border-2 border-black bg-white overflow-hidden">
+                <!-- Contenedor que aparece al hacer hover -->
+                <div class="absolute inset-0 flex items-center justify-center bg-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <p class="text-center transition-opacity duration-500">Texto más largo que reemplaza al título y la imagen</p>
+                </div>
+              <!-- Contenedor que se oculta al hacer hover -->
+                <div class="p-4 font-semibold h-full justify-between relative z-10 flex flex-col items-center duration-500 group-hover:opacity-0">
+                    <h3 class="text-center md:text-2xl text:xl text-black mb-2 transition-opacity duration-500">Desarrolo de Talentos</h3>
+                    <img src="images/busqueda-de-talentos.png" alt="Descripción de la imagen" class="w-32 h-32 transition-opacity duration-500">
+                </div>
+            </div>
+        <!-- Tercer Contenedor -->
+            <div class="borde-interior group md:w-1/4 w-2/3 p-4 border-2 border-black bg-white overflow-hidden">
+                <!-- Contenedor que aparece al hacer hover -->
+                <div class="absolute inset-0 flex items-center justify-center bg-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <p class="text-center transition-opacity duration-500">Texto más largo que reemplaza al título y la imagen</p>
+                </div>
+              <!-- Contenedor que se oculta al hacer hover -->
+                <div class="p-4 font-semibold h-full justify-between relative z-10 flex flex-col items-center duration-500 group-hover:opacity-0">
+                    <h3 class="text-center md:text-2xl text:xl text-black mb-2 transition-opacity duration-500">Gestión de Desempeño</h3>
+                    <img src="images/productividad.png" alt="Descripción de la imagen" class="w-32 h-32 transition-opacity duration-500">
+                </div>
+            </div>
         </div>
-    </section>
-
-    <!-- Sección 2 -->
-    <section id="seccion2" class="py-12 bg-gray-200">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-4">Sección 2</h2>
-            <p class="text-gray-700">Contenido de la sección 2. Puedes agregar más texto, imágenes, o cualquier otro contenido aquí.</p>
+    </div> 
+    <!--2da Seccion - Seccion divisora-->
+    <div class="content-center">
+        <img class="w-full bg-contain" src="images/inicio-separacion.svg" alt="Imagen de reunion en oficina para separar secciones.">
+    </div> 
+    <!--3ra Seccion-->
+    <div class="flex flex-col justify-center my-4 w-full">
+        <h2 class="lg:text-3xl text-xl font-bold mb-4 text-center">¿Por qué Elegirnos?</h2>
+        <div class="flex flex-wrap md:flex-row flex-col justify-evenly content-center gap-4 p-4">
+            <!-- Primer Contenedor -->
+            <div class="relative group md:w-1/4 w-2/3 p-4 bg-[#F2B728] rounded-lg overflow-hidden">
+                <!-- Contenedor que aparece al hacer hover -->
+                <div class="absolute inset-0 flex items-center justify-center bg-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <p class="text-center transition-opacity duration-500">Texto más largo que reemplaza al título y la imagen</p>
+                </div>
+                <!-- Contenedor que se oculta al hacer hover -->
+                <div class="p-4 font-semibold h-full justify-between relative z-10 flex flex-col items-center duration-500 group-hover:opacity-0">
+                    <h3 class="text-center md:text-2xl text:xl text-black mb-2 transition-opacity duration-500">Reclutamiento y Selección</h3>
+                    <img src="images/reclutamiento.png" alt="Descripción de la imagen" class="w-32 h-32 transition-opacity duration-500">
+                </div>
+            </div>
+            <!-- Segundo Contenedor -->
+            <div class="relative group md:w-1/4 w-2/3 p-4 bg-[#F2B728] rounded-lg overflow-hidden">
+                <!-- Contenedor que aparece al hacer hover -->
+                <div class="absolute inset-0 flex items-center justify-center bg-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <p class="text-center transition-opacity duration-500">Texto más largo que reemplaza al título y la imagen</p>
+                </div>
+                <!-- Contenedor que se oculta al hacer hover -->
+                <div class="p-4 font-semibold h-full justify-between relative z-10 flex flex-col items-center duration-500 group-hover:opacity-0">
+                    <h3 class="text-center md:text-2xl text:xl text-black mb-2 transition-opacity duration-500">Desarrolo de Talentos</h3>
+                    <img src="images/busqueda-de-talentos.png" alt="Descripción de la imagen" class="w-32 h-32 transition-opacity duration-500">
+                </div>
+            </div>
+            <!-- Tercer Contenedor -->
+            <div class="relative group md:w-1/4 w-2/3 p-4 bg-[#F2B728] rounded-lg overflow-hidden">
+                <!-- Contenedor que aparece al hacer hover -->
+                <div class="absolute inset-0 flex items-center justify-center bg-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <p class="text-center transition-opacity duration-500">Texto más largo que reemplaza al título y la imagen</p>
+                </div>
+                <!-- Contenedor que se oculta al hacer hover -->
+                <div class="p-4 font-semibold h-full justify-between relative z-10 flex flex-col items-center duration-500 group-hover:opacity-0">
+                    <h3 class="text-center md:text-2xl text:xl text-black mb-2 transition-opacity duration-500">Gestión de Desempeño</h3>
+                    <img src="images/productividad.png" alt="Descripción de la imagen" class="w-32 h-32 transition-opacity duration-500">
+                </div>
+            </div>
         </div>
-    </section>
-
-    <!-- Sección 3 -->
-    <section id="seccion3" class="py-12 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-4">Sección 3</h2>
-            <p class="text-gray-700">Contenido de la sección 3. Utiliza esta área para proporcionar información adicional a tus visitantes.</p>
-        </div>
-    </section>
-
-    <!-- Sección 4 -->
-    <section id="seccion4" class="py-12 bg-gray-200">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-4">Sección 4</h2>
-            <p class="text-gray-700">Contenido de la sección 4. Esta puede ser la última sección antes del pie de página.</p>
-        </div>
-    </section>
+    </div> 
 </main>
     <!-- Footer -->
     <footer class="background-azul text-white py-4">
@@ -98,9 +161,9 @@
             <div class="flex flex-col items-center justify-center w-fit py-2 px-10">
                 <h3 class="lg:text-2xl text-xl">Contacto</h3>
                 <img class="size-24" src="images/gmail.png" alt="Imagen de logo de mail">
-                <a href="contacto.html" class="w-fit text-black bg-[#F2B728] text-sm sm:text-xl content-center font-semibold border-solid border-2 border-white py-3 px-8 rounded-lg">Contacto</a>    
+                <a href="pages/contacto.html" class="w-fit bg-[#F2B728] text-[#282D46] text-sm sm:text-xl content-center font-semibold border-solid border-2 border-white py-3 px-8 rounded-lg transition-all duration-500 ease-in-out transform hover:scale-110 hover:bg-[#ffcc00] hover:text-white hover:shadow-2xl hover:border-[#1c2033]">Contacto</a>    
             </div>
-            <img class="size-24" src="images/linkedin (2).png" alt="Imagen del logo de Linkedin">
+            <img class="size-24 transition-all duration-500 ease-in-out transform hover:scale-105 hover:shadow-lg hover:bg-[#282D46] hover:border-4 hover:border-[#F2B728] hover:p-2 rounded-lg" src="images/linkedin (2).png" alt="Imagen del logo de Linkedin">        
         </div>
         <div class="background-azul content-center text-center pt-8 md:pt-0 ">
             <img class="h-16 lg:h-28 mx-auto" src="images/gathering-logo-blanco.png" alt="Logo de Gathering HR">

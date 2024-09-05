@@ -27,3 +27,31 @@ body {
 .texto-blanco-propio{
     color: $blanco
 }
+/* Añadir al archivo CSS */
+.group {
+    border: 2px solid black;
+}
+.group:hover::before {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    border: 5px solid $amarillo-secundario;
+    box-sizing: border-box;
+}
+/* Añadir al archivo CSS */
+.borde-interior {
+    position: relative;
+    padding: 5px; /* Ajusta el padding para que el borde interior se vea bien */
+}
+.borde-interior::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 8px solid $amarillo-secundario; /* Grosor y color del borde interior */
+    box-sizing: border-box;
+    pointer-events: none; /* Asegura que el borde interior no interfiera con la interacción */
+}
