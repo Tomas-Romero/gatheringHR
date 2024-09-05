@@ -514,6 +514,14 @@ video {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+.my-2{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.my-1{
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
 .mb-2{
   margin-bottom: 0.5rem;
 }
@@ -572,15 +580,6 @@ video {
 .h-full{
   height: 100%;
 }
-.h-24{
-  height: 6rem;
-}
-.h-2{
-  height: 0.5rem;
-}
-.h-2\/3{
-  height: 66.666667%;
-}
 .w-12{
   width: 3rem;
 }
@@ -603,15 +602,6 @@ video {
 .w-full{
   width: 100%;
 }
-.w-24{
-  width: 6rem;
-}
-.w-1{
-  width: 0.25rem;
-}
-.w-1\/4{
-  width: 25%;
-}
 .max-w-7xl{
   max-width: 80rem;
 }
@@ -630,11 +620,17 @@ video {
 .content-center{
   align-content: center;
 }
+.items-start{
+  align-items: flex-start;
+}
 .items-center{
   align-items: center;
 }
 .items-stretch{
   align-items: stretch;
+}
+.justify-start{
+  justify-content: flex-start;
 }
 .justify-center{
   justify-content: center;
@@ -715,14 +711,17 @@ video {
 .bg-\[\#\]{
   background-color: #;
 }
-.bg-\[\#F\]{
-  background-color: #F;
+.bg-\[\#282D46\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(40 45 70 / var(--tw-bg-opacity));
 }
-.bg-\[\#F2\]{
-  background-color: #F2;
+.bg-\[\#ffcc00\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 204 0 / var(--tw-bg-opacity));
 }
-.bg-\[\#F2B7\]{
-  background-color: #F2B7;
+.bg-\[\#F0F0F0\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 240 240 / var(--tw-bg-opacity));
 }
 .bg-contain{
   background-size: contain;
@@ -782,8 +781,14 @@ video {
 .pt-8{
   padding-top: 2rem;
 }
+.text-left{
+  text-align: left;
+}
 .text-center{
   text-align: center;
+}
+.text-start{
+  text-align: start;
 }
 .text-2xl{
   font-size: 1.5rem;
@@ -804,6 +809,14 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 .font-bold{
   font-weight: 700;
@@ -1086,10 +1099,6 @@ body {
     margin-left: 3rem;
     margin-right: 3rem;
   }
-  .md\:my-8{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
   .md\:block{
     display: block;
   }
@@ -1099,14 +1108,8 @@ body {
   .md\:hidden{
     display: none;
   }
-  .md\:h-32{
-    height: 8rem;
-  }
   .md\:w-1\/4{
     width: 25%;
-  }
-  .md\:w-32{
-    width: 8rem;
   }
   .md\:flex-row{
     flex-direction: row;
@@ -1133,6 +1136,10 @@ body {
   .md\:text-7xl{
     font-size: 4.5rem;
     line-height: 1;
+  }
+  .md\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
   .md\:text-base{
     font-size: 1rem;
@@ -1161,6 +1168,9 @@ body {
   }
   .lg\:w-full{
     width: 100%;
+  }
+  .lg\:w-1\/4{
+    width: 25%;
   }
   .lg\:flex-row{
     flex-direction: row;
@@ -1195,6 +1205,13 @@ body {
   .lg\:text-5xl{
     font-size: 3rem;
     line-height: 1;
+  }
+  .lg\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  .lg\:font-semibold{
+    font-weight: 600;
   }
 }
 
