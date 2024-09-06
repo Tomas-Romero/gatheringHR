@@ -778,8 +778,14 @@ video {
 .pb-4{
   padding-bottom: 1rem;
 }
+.pt-4{
+  padding-top: 1rem;
+}
 .pt-8{
   padding-top: 2rem;
+}
+.pb-8{
+  padding-bottom: 2rem;
 }
 .text-center{
   text-align: center;
@@ -806,6 +812,10 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 .font-bold{
   font-weight: 700;
@@ -960,8 +970,8 @@ body {
     box-shadow: 0 0 10px 0 rgba(255, 255, 0, 0);
   }
   50% {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.6);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.6);
   }
   100% {
     transform: scale(1);
@@ -969,9 +979,30 @@ body {
   }
 }
 .hover\:animate-pulse-custom:hover {
-  background: linear-gradient(to right, #1e3a8a, #2563eb); /* Gradiente solo en hover */
+  background: linear-gradient(to right, #282D46, #2563eb); /* Gradiente solo en hover */
   animation: pulse-custom 2s infinite; /* Efecto pulse durante hover */
   transition: background 2s ease-in-out; /* Transición suave para el fondo */
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+  @keyframes pulse-custom-mobile {
+    0% {
+      transform: scale(0.75);
+      box-shadow: 0 0 5px 0 rgba(255, 255, 0, 0);
+    }
+    50% {
+      transform: scale(0.9); /* Menor escala en móviles */
+      box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.4); /* Sombra más pequeña en móviles */
+    }
+    100% {
+      transform: scale(0.75);
+      box-shadow: 0 0 5px 0 rgba(255, 255, 0, 0);
+    }
+  }
+  .hover\:animate-pulse-custom:hover {
+    animation: pulse-custom-mobile 2s infinite; /* Usa la animación ajustada para móviles */
+  }
 }
 
 .visited\:text-white:visited{
@@ -1174,6 +1205,10 @@ body {
   .md\:text-5xl{
     font-size: 3rem;
     line-height: 1;
+  }
+  .md\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
   .md\:text-xl{
     font-size: 1.25rem;
