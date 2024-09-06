@@ -555,6 +555,10 @@ video {
   width: 6rem;
   height: 6rem;
 }
+.size-16{
+  width: 4rem;
+  height: 4rem;
+}
 .h-16{
   height: 4rem;
 }
@@ -575,6 +579,12 @@ video {
 }
 .h-full{
   height: 100%;
+}
+.h-10{
+  height: 2.5rem;
+}
+.h-12{
+  height: 3rem;
 }
 .w-12{
   width: 3rem;
@@ -744,6 +754,14 @@ video {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
 .pb-20{
   padding-bottom: 5rem;
 }
@@ -755,6 +773,9 @@ video {
 }
 .text-center{
   text-align: center;
+}
+.text-justify{
+  text-align: justify;
 }
 .text-2xl{
   font-size: 1.5rem;
@@ -800,6 +821,30 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.underline{
+  text-decoration-line: underline;
+}
+.decoration-yellow-500{
+  text-decoration-color: #eab308;
+}
+.decoration-\[\]{
+  text-decoration-color: ;
+}
+.decoration-\[\#\]{
+  text-decoration-color: #;
+}
+.decoration-\[\#F2B728\]{
+  text-decoration-color: #F2B728;
+}
+.decoration-\[\#F0F0F0\]{
+  text-decoration-color: #F0F0F0;
+}
+.decoration-solid{
+  text-decoration-style: solid;
+}
+.decoration-2{
+  text-decoration-thickness: 2px;
 }
 .antialiased{
   -webkit-font-smoothing: antialiased;
@@ -1006,6 +1051,24 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.hover\:text-yellow-500:hover{
+  --tw-text-opacity: 1;
+  color: rgb(234 179 8 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\]:hover{
+  color: ;
+}
+
+.hover\:text-\[\#\]:hover{
+  color: #;
+}
+
+.hover\:text-\[\#F2B728\]:hover{
+  --tw-text-opacity: 1;
+  color: rgb(242 183 40 / var(--tw-text-opacity));
+}
+
 .hover\:underline:hover{
   text-decoration-line: underline;
 }
@@ -1070,6 +1133,9 @@ body {
   .md\:hidden{
     display: none;
   }
+  .md\:h-16{
+    height: 4rem;
+  }
   .md\:flex-row{
     flex-direction: row;
   }
@@ -1100,6 +1166,10 @@ body {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
 
 @media (min-width: 1024px){
@@ -1114,6 +1184,9 @@ body {
   }
   .lg\:h-72{
     height: 18rem;
+  }
+  .lg\:h-16{
+    height: 4rem;
   }
   .lg\:w-1\/2{
     width: 50%;
@@ -1160,6 +1233,10 @@ body {
   .lg\:text-5xl{
     font-size: 3rem;
     line-height: 1;
+  }
+  .lg\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
