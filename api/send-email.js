@@ -1,57 +1,59 @@
 const nodemailer = require('nodemailer');
-const formidable = require('formidable');  // Para manejar archivos
-const fs = require('fs');
+const formidable = require('formidable');
 
 export default async function handler(req, res) {
     if (req.method === 'POST') {
-        // Parsear el formulario usando formidable para manejar archivos
         const form = new formidable.IncomingForm();
+
         form.parse(req, async (err, fields, files) => {
             if (err) {
-                return res.status(500).json({ error: 'Error procesando el formulario' });
+                console.error('Error parsing form:', err);
+                return res.status(500).json({ error: 'Error al procesar el formulario' });
             }
 
-            const { nombre, apellido, email, mensaje } = fields;
-            const archivo = files.archivo;
+            const { nombre, apellido, motivo, email, mensaje } = fields;
+            const archivoAdjunto = files.file?.filepath;
 
-            // Configuración de Nodemailer
+            // Configurar el transporte de nodemailer
             let transporter = nodemailer.createTransport({
                 service: 'Gmail',
                 auth: {
-                    user: 'tominetorgamer@gmail.com', // Reemplaza con tu correo
-                    pass: 'Tomasromero2003%',       // Reemplaza con tu contraseña
+                    user: process.env.EMAIL_USER, // Asegúrate de configurar esta variable en Vercel
+                    pass: process.env.EMAIL_PASS, // Asegúrate de configurar esta variable en Vercel
                 },
             });
 
-            // Opciones del correo electrónico
+            // Opciones del correo
             let mailOptions = {
                 from: email,
-                to: 'Tomasromero200310@gmail.com',  // El correo al que llegarán los mensajes
-                subject: 'Nuevo mensaje con archivo adjunto',
-                text: `
-                    Nombre: ${nombre}
-                    Apellido: ${apellido}
-                    Email: ${email}
-                    Mensaje: ${mensaje}
-                `,
+                to: process.env.EMAIL_USER, // Tu correo personal donde recibirás los mensajes
+                subject: `Nuevo mensaje de ${nombre} ${apellido}`,
+                text: `Motivo: ${motivo}\n\nMensaje:\n${mensaje}\n\nCorreo de contacto: ${email}`,
                 attachments: [
                     {
-                        filename: archivo.originalFilename,
-                        content: fs.createReadStream(archivo.filepath)  // Lee el archivo
-                    }
-                ]
+                        filename: files.file?.originalFilename,
+                        path: archivoAdjunto, // Ruta del archivo cargado
+                    },
+                ],
             };
 
-            // Enviar el correo
+            // Intentar enviar el correo
             try {
                 await transporter.sendMail(mailOptions);
                 res.status(200).json({ message: 'Correo enviado con éxito' });
             } catch (error) {
-                console.error(error);
+                console.error('Error al enviar el correo:', error);
                 res.status(500).json({ error: 'Error al enviar el correo' });
             }
         });
     } else {
-        res.status(405).json({ message: 'Método no permitido' });
+        res.status(405).json({ error: 'Método no permitido' });
     }
 }
+
+export const config = {
+    api: {
+        bodyParser: false, // Esto permite que formidable maneje el cuerpo de la solicitud
+    },
+};
+

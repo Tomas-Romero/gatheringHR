@@ -10,6 +10,7 @@
     "watch:css": "postcss css/styles.css -o css/styles.min.css --watch"
   },
   "dependencies": {
+    "formidable": "^3.5.1",
     "nodemailer": "^6.9.15"
   }
 }
