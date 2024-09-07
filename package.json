@@ -6,7 +6,10 @@
     "tailwindcss": "^3.4.10"
   },
   "scripts": {
-    "build:css": "sass scss/styles.scss css/styles.css && npx postcss css/styles.css -o css/styles.min.css", 
+    "build:css": "sass scss/styles.scss css/styles.css && npx postcss css/styles.css -o css/styles.min.css",
     "watch:css": "postcss css/styles.css -o css/styles.min.css --watch"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.15"
   }
 }

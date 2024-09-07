@@ -1000,16 +1000,12 @@ body {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:border-4:hover{
-  border-width: 4px;
-}
-
-.hover\:border:hover{
-  border-width: 1px;
-}
-
 .hover\:border-2:hover{
   border-width: 2px;
+}
+
+.hover\:border-4:hover{
+  border-width: 4px;
 }
 
 .hover\:border-solid:hover{
@@ -1021,22 +1017,14 @@ body {
   border-color: rgb(28 32 51 / var(--tw-border-opacity));
 }
 
-.hover\:border-\[\#F2B728\]:hover{
-  --tw-border-opacity: 1;
-  border-color: rgb(242 183 40 / var(--tw-border-opacity));
-}
-
-.hover\:border-\[\]:hover{
-  border-color: ;
-}
-
-.hover\:border-\[\#\]:hover{
-  border-color: #;
-}
-
 .hover\:border-\[\#282D46\]:hover{
   --tw-border-opacity: 1;
   border-color: rgb(40 45 70 / var(--tw-border-opacity));
+}
+
+.hover\:border-\[\#F2B728\]:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(242 183 40 / var(--tw-border-opacity));
 }
 
 .hover\:bg-\[\#282D46\]:hover{
