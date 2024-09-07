@@ -16,12 +16,14 @@ export default async function handler(req, res) {
 
             // Configurar el transporte de nodemailer
             let transporter = nodemailer.createTransport({
-                service: 'Gmail',
+                host: "smtp.gmail.com",
+                port: 465,
+                secure: true, // true para usar SSL
                 auth: {
-                    user: process.env.EMAIL_USER, // Asegúrate de configurar esta variable en Vercel
-                    pass: process.env.EMAIL_PASS, // Asegúrate de configurar esta variable en Vercel
+                  user: process.env.SMTP_USER, // Tu correo de Gmail
+                  pass: process.env.SMTP_PASSWORD, // La contraseña de aplicación de Google
                 },
-            });
+              });
 
             // Opciones del correo
             let mailOptions = {
