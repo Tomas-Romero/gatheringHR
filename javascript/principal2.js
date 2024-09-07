@@ -4,7 +4,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
     const formData = new FormData(this);
 
     // Enviar los datos del formulario al backend
-    const response = await fetch('/api/send-email', {
+    const response = await fetch('../api/send-email', {
         method: 'POST',
         body: formData
     });
