@@ -434,34 +434,6 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
-.container{
-  width: 100%;
-}
-@media (min-width: 640px){
-  .container{
-    max-width: 640px;
-  }
-}
-@media (min-width: 768px){
-  .container{
-    max-width: 768px;
-  }
-}
-@media (min-width: 1024px){
-  .container{
-    max-width: 1024px;
-  }
-}
-@media (min-width: 1280px){
-  .container{
-    max-width: 1280px;
-  }
-}
-@media (min-width: 1536px){
-  .container{
-    max-width: 1536px;
-  }
-}
 .fixed{
   position: fixed;
 }
@@ -508,10 +480,6 @@ video {
 .my-4{
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-.my-8{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 .mb-2{
   margin-bottom: 0.5rem;
@@ -776,9 +744,9 @@ video {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.py-8{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 .pb-10{
   padding-bottom: 2.5rem;
@@ -849,10 +817,6 @@ video {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
-.text-blue-600{
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
-}
 .text-gray-700{
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
@@ -860,18 +824,6 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.text-\[\]{
-  color: ;
-}
-.text-\[\#\]{
-  color: #;
-}
-.text-\[282D46\]{
-  color: 282D46;
-}
-.text-\[F2B728\]{
-  color: F2B728;
 }
 .underline{
   text-decoration-line: underline;
