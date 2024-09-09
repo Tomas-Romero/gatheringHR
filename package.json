@@ -10,7 +10,10 @@
     "watch:css": "postcss css/styles.css -o css/styles.min.css --watch"
   },
   "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
     "formidable": "^3.5.1",
+    "multer": "^1.4.5-lts.1",
     "nodemailer": "^6.9.15"
   }
 }

@@ -576,6 +576,9 @@ video {
 .max-w-lg{
   max-width: 32rem;
 }
+.max-w-md{
+  max-width: 28rem;
+}
 .scale-75{
   --tw-scale-x: .75;
   --tw-scale-y: .75;
@@ -744,11 +747,17 @@ video {
 .pb-8{
   padding-bottom: 2rem;
 }
+.pt-10{
+  padding-top: 2.5rem;
+}
 .pt-4{
   padding-top: 1rem;
 }
 .pt-8{
   padding-top: 2rem;
+}
+.pt-52{
+  padding-top: 13rem;
 }
 .text-center{
   text-align: center;
