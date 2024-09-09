@@ -59,13 +59,39 @@
         </div>
     </header>
     <!--Main de la pagina-->
-    <main>
+    <main class="pt-8">
         <!-- Botón flotante de WhatsApp -->
         <a href="https://wa.me/5219843098844" 
         class="fixed bottom-4 right-4 bg-green-500 p-2 rounded-full shadow-lg hover:bg-green-600 transition transform hover:scale-105 z-50"
         target="_blank">
             <img src="../images/whatsapp.png" alt="Logo de WhatsApp" class="h-16 w-16">
         </a>
+        <!--Contenedores de las vacantes-->
+        <div id="vacantes-container" class="px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+            <!-- Aquí se cargarán las vacantes dinámicamente -->
+        </div>
+        <!--2da Seccion - Contacto para Vacantes-->
+        <div class="text-white background-azul lg:flex flex-col lg:justify-between lg:items-center gap-8 pt-4 pb-20">
+            <!-- Icono y Título -->
+            <div class="flex items-center justify-center pb-4 lg:pb-0 text-center">
+                <img src="../images/vacante-de-trabajo-blanco.png" alt="Icono de contacto para vacantes" class="w-12 mr-3">
+                <h2 id="contacto-vacantes" class="scroll-mt-20 lg:text-3xl text-xl font-bold">Contacto Vacantes</h2>
+            </div>  
+            <!-- Botón -->
+            <div class="lg:w-full lg:justify-evenly flex flex-col lg:flex-row items-center text-center">
+                <p class="text-justify sm:w-1/2 w-full text-sm sm:text-xl leading-relaxed mb-4 lg:mb-0">
+                    Estamos comprometidos a ayudarte a encontrar la próxima oportunidad que encaje con tu carrera y aspiraciones. Déjanos guiarte hacia una empresa que valore tu talento y donde puedas crecer profesionalmente. ¡Envíanos tu CV y empecemos a construir tu futuro juntos!
+                </p>
+                <a href="contacto.html"
+                   class="text-[#282D46] bg-[#F2B728] text-sm sm:text-xl content-center font-semibold border-solid border-2 border-[#282D46] py-3 px-10 rounded-lg transition-all duration-500 ease-in-out transform hover:scale-110 hover:bg-[#ffcc00] hover:text-white hover:shadow-2xl hover:border-[#1c2033]">
+                    Enviar CV
+                </a>
+            </div>
+        </div>
+        <!--3da Seccion - Seccion divisora-->
+    <div class="content-center">
+        <img class="w-full bg-contain" src="../images/inicio-separacion.svg" alt="Imagen de reunion en oficina para separar secciones.">
+    </div>
     </main>
     <!-- Footer -->
     <footer class="background-azul text-white py-4">
@@ -102,5 +128,6 @@
             navMenuMobile.classList.toggle('hidden');
         });
     </script>
+    <script src="../javascript/vacantes.js"></script>
 </body>
 </html>
