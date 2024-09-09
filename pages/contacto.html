@@ -109,6 +109,7 @@
                 <img src="../images/formulario.png" alt="Icono de contacto" class="w-12 mr-3">
                 <h2 class="text-white md:text-3xl text-xl font-bold">Contáctanos</h2>
             </div>
+            <p class=" mb-4 text-white font-semibold text-base md:text-xl">Este formulario es exclusivo para empresas. Si eres candidato, por favor regístrate <a class=" transition-all duration-300 transform hover:text-white hover:scale-105 underline text-[#F2B728]" href="#contacto-vacantes">aquí</a></p>
             <!--Formulario-->
             <div class="w-full max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md">
                 <form id="contact-form" class="max-w-lg mx-auto p-8 bg-white shadow-md rounded-lg">
@@ -117,20 +118,37 @@
                       <input type="text" id="nombre" name="nombre" required class="w-full px-3 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#282D46]">
                     </div>
                     <div class="mb-4">
-                      <label class="block text-gray-700 font-bold mb-2" for="apellido">Apellido</label>
-                      <input type="text" id="apellido" name="apellido" required class="w-full px-3 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#282D46]">
+                      <label class="block text-gray-700 font-bold mb-2" for="nombreempresa">Nombre de la Empresa</label>
+                      <input type="text" id="nombreempresa" name="nombreempresa" required class="w-full px-3 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#282D46]">
                     </div>
                     <div class="mb-4">
-                      <label class="block text-gray-700 font-bold mb-2" for="motivo">Motivo</label>
+                      <label class="block text-gray-700 font-bold mb-2" for="motivo">Tipo de Servicio</label>
                       <select id="motivo" name="motivo" required class="w-full px-3 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#282D46]">
-                        <option value="Consulta general">Consulta general</option>
-                        <option value="Soporte técnico">Soporte técnico</option>
-                        <option value="Otros">Otros</option>
+                        <option value="Reclutamiento de Personal">Reclutamiento de Personal</option>
+                        <option value="Headhunting">Headhunting</option>
+                        <option value="Desarrollo de Talento">Desarrollo de Talento</option>
+                        <option value="Gestion de Desempeño">Gestion de Desempeño</option>
+                        <option value="Otro">Otro</option>
                       </select>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold mb-2" for="numerotelefono">Número de Teléfono</label>
+                        <input type="text" id="numerotelefono" name="numerotelefono" required class="w-full px-3 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#282D46]">
                     </div>
                     <div class="mb-4">
                       <label class="block text-gray-700 font-bold mb-2" for="email">Correo Electrónico</label>
                       <input type="email" id="email" name="email" required class="w-full px-3 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#282D46]">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold mb-2" for="cantidad-empleados">Tamaño de la Empresa</label>
+                        <select id="cantidad-empleados" name="cantidad-empleados" required class="w-full px-3 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#282D46]">
+                          <option value="1 a 5 empleados">1 a 5 empleados</option>                          <option value="1 a 5 empleados">1 a 5 empleados</option>
+                          <option value="6 a 10 empleados">6 a 10 empleados</option>
+                          <option value="11 a 25 empleados">11 a 25 empleados</option>
+                          <option value="26 a 50 empleados">26 a 50 empleados</option>
+                          <option value="51 a 100 empleados">51 a 100 empleados</option>
+                          <option value="Más de 100 empleados">Más de 100 empleados</option>
+                        </select>
                     </div>
                     <div class="mb-4">
                       <label class="block text-gray-700 font-bold mb-2" for="mensaje">Mensaje</label>
@@ -144,6 +162,24 @@
         <div class="content-center"></div>
             <img class="w-full bg-contain " src="../images/cartel-gathering.png" alt="Portada de inicio para Gathering HR">
         </div>
+        <!--4ta Seccion - Contacto para Vacantes-->
+        <div class="p-6 lg:flex flex-col lg:justify-between lg:items-center gap-8 pb-20">
+            <!-- Icono y Título -->
+            <div class="flex items-center justify-center mb-4 lg:mb-0 text-center">
+                <img src="../images/vacante-de-trabajo.png" alt="Icono de contacto para vacantes" class="w-12 mr-3">
+                <h2 id="contacto-vacantes" class="scroll-mt-20 lg:text-3xl text-xl font-bold">Contacto Vacantes</h2>
+            </div>  
+            <!-- Botón -->
+            <div class="lg:w-full lg:justify-evenly flex flex-col lg:flex-row items-center text-center">
+                <p class="text-justify sm:w-1/2 w-full text-sm sm:text-xl leading-relaxed mb-4 lg:mb-0">
+                    Estamos comprometidos a ayudarte a encontrar la próxima oportunidad que encaje con tu carrera y aspiraciones. Déjanos guiarte hacia una empresa que valore tu talento y donde puedas crecer profesionalmente. ¡Envíanos tu CV y empecemos a construir tu futuro juntos!
+                </p>
+                <a href="contacto.html"
+                   class="w-fit bg-[#F2B728] text-sm sm:text-xl content-center font-semibold border-solid border-2 border-[#282D46] py-3 px-10 rounded-lg transition-all duration-500 ease-in-out transform hover:scale-110 hover:bg-[#ffcc00] hover:text-white hover:shadow-2xl hover:border-[#1c2033]">
+                    Enviar CV
+                </a>
+            </div>
+        </div
     </main>
     <!-- Footer -->
     <footer class="background-azul text-white py-4">
