@@ -9,6 +9,7 @@
         <link rel="shortcut icon" href="../images/gathering-logo-blanco.png" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/styles.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://unpkg.com/feather-icons"></script>
         <title>Gathering HR | Nosotros</title>
     </head>
@@ -18,8 +19,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <!-- Logo y Nombre de la Marca -->
-                <a href="nosotros.html" class="flex items-center">
-<img src="../images/gathering-logo-blanco.png" alt="Imagen de la oficina Gathering HR" class="h-9 transition-transform duration-300 transform hover:scale-110">
+                <a data-aos="fade-right" data-aos-duration="600" href="nosotros.html" class="flex items-center">
+                <img src="../images/gathering-logo-blanco.png" alt="Imagen de la oficina Gathering HR" class="h-9 transition-transform duration-300 transform hover:scale-110">
                     <span class="text-white text-2xl font-bold ml-3 hover:scale-105 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-white hover:to-gray-300 transition-all duration-300 ease-in-out">GATHERING HR</span>
                 </a>
                 <!-- Botón de Menú para Móviles -->
@@ -29,7 +30,7 @@
                     </button>
                 </div>
                 <!-- Menú de Navegación -->
-                <div id="nav-menu" class="hidden md:flex md:items-center md:space-x-6">
+                <div data-aos="fade-left" data-aos-duration="600" id="nav-menu" class="hidden md:flex md:items-center md:space-x-6">
                     <a href="../index.html" class="nav-link text-white visited:text-white hover:text-gray-500 hover:underline hover:scale-125 transition-all duration-300 ease-in-out">Inicio</a>
                     <span class="hidden md:block h-6 border-l-2 border-gray-300"></span>
                     <a href="nosotros.html" class="nav-link text-white visited:text-white hover:text-gray-500 hover:underline hover:scale-125 transition-all duration-300 ease-in-out font-bold">Nosotros</a>
@@ -48,22 +49,22 @@
             </div>
         </div>
     </nav>
-    <header class="text-white mt-16">
+    <header data-aos="zoom-in-up" data-aos-duration="600" class="text-white mt-16">
         <div class="content-center">
             <img class="w-full bg-contain " src="../images/cartel-gathering.png" alt="Portada de inicio para Gathering HR">
         </div>
     </header>
     <main>
         <!-- Botón flotante de WhatsApp -->
-        <a href="https://wa.me/5219843098844" 
+        <a data-aos="flip-left" data-aos-duration="600" href="https://wa.me/5219843098844" 
         class="fixed bottom-4 right-4 bg-green-500 p-2 rounded-full shadow-lg hover:bg-green-600 transition transform hover:scale-105 z-50"
         target="_blank">
             <img src="../images/whatsapp.png" alt="Logo de WhatsApp" class="h-16 w-16">
         </a>
         <!-- Sección 1 -->
-        <div class="flex flex-col lg:flex-row items-stretch justify-center lg:justify-between background-azul text-white">
+        <div data-aos="fade-up" data-aos-duration="600" class="flex flex-col lg:flex-row items-stretch justify-center lg:justify-between background-azul text-white">
             <div class="lg:w-1/2 text-center lg:text-left px-10 p-8">
-                <h2 class="lg:text-3xl text-xl font-bold mb-4 text-center">Sobre Nosotros</h2>
+                <h1 class="lg:text-3xl text-xl font-bold mb-4 text-center">Sobre Nosotros</h1>
                 <p class="leading-relaxed text-justify text-sm sm:text-xl mb-6">En Gathering HR, nos dedicamos a potenciar el éxito de su empresa mediante la gestión eficiente de recursos humanos. Somos su socio estratégico para identificar, desarrollar y retener el talento excepcional que impulsará el crecimiento de su organización.</p>
             </div>
             <div class="lg:w-1/2 flex justify-center lg:p-8">
@@ -81,7 +82,7 @@
             </div>
         </div>                       
         <!-- Sección 3 -->
-        <div class="flex flex-col py-10 lg:flex-row items-center justify-center w-full background-azul text-white bg-center bg-contain bg-no-repeat" style="background-image: url(../images/mexico-mapa.webp);">
+        <div data-aos="fade-up" data-aos-duration="600" class="flex flex-col py-10 lg:flex-row items-center justify-center w-full background-azul text-white bg-center bg-contain bg-no-repeat" style="background-image: url(../images/mexico-mapa.webp);">
             <div class="text-center w-full lg:w-3/4 p-8">
                 <h2 class="lg:text-3xl text-xl font-bold mb-4 text-center">Nuestra Cobertura</h2>
                 <p class="leading-relaxed text-sm sm:text-xl mb-6">En Gathering nos especializamos en conectar a las mejores personas con las mejores oportunidades, garantizando soluciones personalizadas para cada región del país. Tu éxito es nuestra prioridad, sin importar dónde te encuentres.</p>
@@ -107,7 +108,7 @@
         </div>        
       </main>
     <!-- Footer -->
-    <footer class="background-azul text-white py-4">
+    <footer data-aos="fade-up" data-aos-duration="600" class="background-azul text-white py-4">
         <div class="background-azul content-center text-center pt-8 md:pt-0 "></div>
             <img class="h-12 md:h-16 mx-auto" src="../images/gathering-logo-blanco.png" alt="Logo de Gathering HR">
             <h3 class="font-bold text-2xl md:text-5xl text-center">GATHERING HR</h1>
@@ -141,6 +142,11 @@
             navMenuMobile.classList.toggle('hidden');
         });
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        </script>
+    
 </body>
     
 </body>

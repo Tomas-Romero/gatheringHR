@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="images/gathering-logo-blanco.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
     <title>Gathering HR</title>
 </head>
@@ -18,7 +19,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <!-- Logo y Nombre de la Marca -->
-                <a href="index.html" class="flex items-center">
+                <a data-aos="fade-right" data-aos-duration="600" href="index.html" class="flex items-center">
                     <img src="images/gathering-logo-blanco.png" alt="Imagen de la oficina Gathering HR" class="h-9 transition-transform duration-300 transform hover:scale-110">
                     <span class="text-white text-2xl font-bold ml-3 hover:scale-105 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-white hover:to-gray-300 transition-all duration-300 ease-in-out">GATHERING HR</span>
                 </a>
@@ -29,7 +30,7 @@
                     </button>
                 </div>
                 <!-- Menú de Navegación -->
-                <div id="nav-menu" class="hidden md:flex md:items-center md:space-x-6">
+                <div data-aos="fade-left" data-aos-duration="600" id="nav-menu" class="hidden md:flex md:items-center md:space-x-6">
                     <a href="index.html" class="nav-link text-white visited:text-white hover:text-gray-500 hover:underline hover:scale-125 transition-all duration-300 ease-in-out font-bold">Inicio</a>
                     <span class="hidden md:block h-6 border-l-2 border-gray-300"></span>
                     <a href="pages/nosotros.html" class="nav-link text-white visited:text-white hover:text-gray-500 hover:underline hover:scale-125 transition-all duration-300 ease-in-out">Nosotros</a>
@@ -48,7 +49,7 @@
             </div>
         </div>
     </nav>
-    <header class="text-white mt-16">
+    <header data-aos="zoom-in-up" data-aos-duration="600" class="text-white mt-16">
         <div class="content-center">
             <img class="w-full bg-contain" src="images/portada-gathering 3.svg" alt="Portada de inicio para Gathering HR">
         </div>
@@ -60,13 +61,13 @@
     </header>
 <main>
     <!-- Botón flotante de WhatsApp -->
-        <a href="https://wa.me/5219843098844" 
+        <a data-aos="flip-left" data-aos-duration="600" href="https://wa.me/5219843098844" 
         class="fixed bottom-4 right-4 bg-green-500 p-2 rounded-full shadow-lg hover:bg-green-600 transition transform hover:scale-105 z-50"
         target="_blank">
             <img src="images/whatsapp.png" alt="Logo de WhatsApp" class="h-16 w-16">
         </a>
     <!-- Sección 1 -->
-    <div class="flex flex-col justify-center my-4 w-full">
+    <div data-aos="fade-up" data-aos-duration="600" class="flex flex-col justify-center my-4 w-full">
         <h2 class="lg:text-3xl text-xl font-bold mb-4 text-center">Nuestros Servicios</h2>
         <div class="flex flex-wrap lg:flex-row flex-col justify-evenly content-center gap-4 p-4">
         <!-- Primer Contenedor -->
@@ -113,7 +114,7 @@
         <img class="w-full bg-contain" src="images/inicio-separacion.svg" alt="Imagen de reunion en oficina para separar secciones.">
     </div> 
     <!--3ra Seccion-->
-    <div class="flex flex-col justify-center py-4 w-full background-azul">
+    <div data-aos="fade-up" data-aos-duration="600" class="flex flex-col justify-center py-4 w-full background-azul">
         <h2 class="text-white lg:text-3xl text-xl font-bold mb-4 text-center">¿Por qué Elegirnos?</h2>
         <div class="flex flex-wrap lg:flex-row flex-col justify-evenly content-center gap-4 p-4">
             <!-- Primer Contenedor -->
@@ -174,7 +175,7 @@
     </div> 
 </main>
     <!-- Footer -->
-    <footer class="background-azul text-white py-4">
+    <footer data-aos="fade-up" data-aos-duration="600" class="background-azul text-white py-4">
         <div class="background-azul content-center text-center pt-8 md:pt-0 "></div>
             <img class="h-12 md:h-16 mx-auto" src="images/gathering-logo-blanco.png" alt="Logo de Gathering HR">
             <h3 class="font-bold text-2xl md:text-5xl text-center">GATHERING HR</h1>
@@ -208,5 +209,9 @@
             navMenuMobile.classList.toggle('hidden');
         });
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
