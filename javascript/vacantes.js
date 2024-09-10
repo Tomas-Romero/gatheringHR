@@ -27,15 +27,17 @@ document.addEventListener('DOMContentLoaded', function () {
                 for (let i = 1; i < rows.length; i++) {
                     const row = rows[i];
                     const vacanteDiv = document.createElement('div');
-                    vacanteDiv.classList.add('bg-white', 'p-6', 'rounded-lg', 'shadow-lg', 'hover:bg-blue-100', 'transition-all', 'duration-300');
+                    vacanteDiv.classList.add('bg-white','flex', 'flex-wrap','gap-4', 'p-6', 'rounded-lg', 'shadow-lg', 'hover:bg-blue-100', 'transition-all', 'duration-300');
 
                     vacanteDiv.innerHTML = `
-                        <h2 class="md:text-2xl text-base font-bold mb-2 text-[#282D46]">Puesto: ${row[0]}</h2>
-                        <p class="text-base"><strong class="text-xs md:text-base text-[#282D46]">Funciones:</strong><br>-${row[1].replace(/\n/g, '<br>-')}</p>
-                        <p class="text-base"><strong class="text-xs md:text-base text-[#282D46]">Requisitos:</strong><br>-${row[2].replace(/\n/g, '<br>-')}</p>
-                        <p class="text-base"><strong class="text-xs md:text-base text-[#282D46]">Lugar de Trabajo:</strong><br>-${row[3].replace(/\n/g, '<br>-')}</p>
-                        <p class="text-base"><strong class="text-xs md:text-base text-[#282D46]">Sueldo: MX $</strong><br>${row[4].replace(/\n/g, '<br>')}</p>'
-                        <p class="text-base"><strong class="text-xs md:text-base text-[#282D46]">Beneficios:</strong><br>${row[5].replace(/\n/g, '<br>')}</p>
+                        <h2 class="md:text-2xl text-base font-bold mb-4 text-[#282D46]">Puesto: ${row[0]}</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <p class="text-base"><strong class="text-xs md:text-base text-[#282D46]">Funciones:</strong><br>-${row[1].replace(/\n/g, '<br>-')}</p>
+                            <p class="text-base"><strong class="text-xs md:text-base text-[#282D46]">Requisitos:</strong><br>-${row[2].replace(/\n/g, '<br>-')}</p>
+                            <p class="text-base"><strong class="text-xs md:text-base text-[#282D46]">Lugar de Trabajo:</strong><br>-${row[3].replace(/\n/g, '<br>-')}</p>
+                            <p class="text-base"><strong class="text-xs md:text-base text-[#282D46]">Sueldo: MX $</strong>${row[4]}</p>
+                            <p class="text-base md:col-span-2"><strong class="text-xs md:text-base text-[#282D46]">Beneficios:</strong><br>-${row[5].replace(/\n/g, '<br>-')}</p>
+                        </div>
                     `;
 
                     vacantesContainer.appendChild(vacanteDiv);

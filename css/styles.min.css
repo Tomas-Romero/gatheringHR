@@ -545,6 +545,9 @@ video {
 .h-full{
   height: 100%;
 }
+.w-1\/2{
+  width: 50%;
+}
 .w-12{
   width: 3rem;
 }
@@ -1176,6 +1179,9 @@ body {
 }
 
 @media (min-width: 768px){
+  .md\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
   .md\:mx-12{
     margin-left: 3rem;
     margin-right: 3rem;
@@ -1274,9 +1280,6 @@ body {
   }
   .lg\:w-full{
     width: 100%;
-  }
-  .lg\:grid-cols-3{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   .lg\:flex-row{
     flex-direction: row;
