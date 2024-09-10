@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Reemplaza 'YOUR_API_KEY' con tu clave de API y 'YOUR_SPREADSHEET_ID' con el ID de tu hoja de cálculo
     const apiKey = 'AIzaSyD6sy-LdBLxt_h2vUuhq5saheNVpu0FT-k';
     const sheetId = '100B6C5smdHZ8aEPEq9kNM1JphVzLmimeoQpEQ_PtiTs';
-    const range = 'vacantes!A:E'; // Ajusta el rango si es necesario
+    const range = 'vacantes!A:F'; // Ajusta el rango si es necesario
 
     const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${range}?key=${apiKey}`;
 
@@ -31,10 +31,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     vacanteDiv.innerHTML = `
                         <h2 class="md:text-2xl text-base font-bold mb-2 text-[#282D46]">Puesto: ${row[0]}</h2>
-                        <p class="text-base"><strong class="text-xs md:text-base text-[#282D46]">Requisitos:</strong><br>-${row[1].replace(/\n/g, '<br>-')}</p>
-                        <p class="text-base"><strong class="text-xs md:text-base text-[#282D46]">Funciones:</strong><br>-${row[2].replace(/\n/g, '<br>-')}</p>
-                        <p class="text-base"><strong class="text-xs md:text-base text-[#282D46]">Beneficios:</strong><br>-${row[3].replace(/\n/g, '<br>-')}</p>
-                        <p class="text-base"><strong class="text-xs md:text-base text-[#282D46]">Sueldo:</strong><br>${row[4].replace(/\n/g, '<br>')}</p>
+                        <p class="text-base"><strong class="text-xs md:text-base text-[#282D46]">Funciones:</strong><br>-${row[1].replace(/\n/g, '<br>-')}</p>
+                        <p class="text-base"><strong class="text-xs md:text-base text-[#282D46]">Requisitos:</strong><br>-${row[2].replace(/\n/g, '<br>-')}</p>
+                        <p class="text-base"><strong class="text-xs md:text-base text-[#282D46]">Lugar de Trabajo:</strong><br>-${row[3].replace(/\n/g, '<br>-')}</p>
+                        <p class="text-base"><strong class="text-xs md:text-base text-[#282D46]">Sueldo: MX $</strong><br>${row[4].replace(/\n/g, '<br>')}</p>'
+                        <p class="text-base"><strong class="text-xs md:text-base text-[#282D46]">Beneficios:</strong><br>${row[5].replace(/\n/g, '<br>')}</p>
                     `;
 
                     vacantesContainer.appendChild(vacanteDiv);
